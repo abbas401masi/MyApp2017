@@ -10,7 +10,7 @@ import com.myapp.config.TilesView;
 @Controller
 public class UserController {
 
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String hello(Model model) {
 		model.addAttribute("hello", "Hello Sir");
 		return TilesView.ADMIN_HOME;
